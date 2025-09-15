@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <link rel="stylesheet" href="GtaV.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego</title>
+</head>
+
+<body>
+<!-- cargar barra navegación-->
+    <div id="contenedor-navegacion"></div>
+
+
+    <div class="contenedor_titulo">
+        <h1>GRAND THEFT AUTO V</h1>
+    </div>
+    <div class="slide">
+        <div class="slide-inner">
+            <input class="slide-open" type="radio" id="slide-1" name="slide" aria-hidden="true" hidden=""
+                checked="checked">
+            <div class="slide-item">
+                <img src="imágenes/GtaV1.jpg">
+            </div>
+            <input class="slide-open" type="radio" id="slide-2" name="slide" aria-hidden="true" hidden="">
+            <div class="slide-item">
+                <img src="imágenes/GtaV2.jpg">
+            </div>
+            <input class="slide-open" type="radio" id="slide-3" name="slide" aria-hidden="true" hidden="">
+            <div class="slide-item">
+                <img src="imágenes/GtaV3.png">
+            </div>
+            <label for="slide-3" class="slide-control prev control-1">‹</label>
+            <label for="slide-2" class="slide-control next control-1">›</label>
+            <label for="slide-1" class="slide-control prev control-2">‹</label>
+            <label for="slide-3" class="slide-control next control-2">›</label>
+            <label for="slide-2" class="slide-control prev control-3">‹</label>
+            <label for="slide-1" class="slide-control next control-3">›</label>
+            <ol class="slide-indicador">
+                <li>
+                    <label for="slide-1" class="slide-circulo">•</label>
+                </li>
+                <li>
+                    <label for="slide-2" class="slide-circulo">•</label>
+                </li>
+                <li>
+                    <label for="slide-3" class="slide-circulo">•</label>
+                </li>
+            </ol>
+        </div>
+    </div>
+             <!---caja de texto1-->
+           <div class="card">
+            <span class="title"> $ 18.000</span>
+    
+    <div class="actions"></div>
+        <button class="pref">
+        </button>
+        <button class="accept">
+            Agregar al carrito
+        </button>
+           </div>
+
+
+           <!---caja de texto2-->
+
+ <div class="card2">
+    <span class="title">DESCRIPCIÓN</span>
+    <p class="description">
+     Trata sobre la vida criminal y las luchas de tres protagonistas diferentes (Michael, Franklin y Trevor) en la ciudad de Los Santos, que funciona como una sátira de la vida moderna estadounidense. 
+     Los jugadores pueden alternar entre ellos para realizar misiones, atracos y llevar a cabo actividades delictivas en un extenso mundo abierto, con el objetivo final de buscar el dinero y escapar de la ley y el crimen.
+    </p>
+    </div>
+       <!-- aquí se carga el pie de pagina -->
+   <div id="contenedor-pie"></div>
+  
+
+
+<script src="cargar-componentes.js"></script>
+
+
+</body>
+</html>

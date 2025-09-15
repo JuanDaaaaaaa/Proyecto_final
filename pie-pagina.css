@@ -1,0 +1,67 @@
+/*footer*/
+.footer{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+    padding: 20px;
+    background-color: rgb(0, 0, 0);
+    
+}
+.item{
+    background-color: rgb(0, 0, 0);
+    color: #00bfff;
+    padding: 40px;
+    
+    border-radius: 10px;
+    align-content: center;
+    
+    
+}
+li{
+    color: #ffffff;
+
+}
+li:hover{
+  color: #00bfff;
+}
+
+a{
+    text-decoration: none;
+    color: #ffffff;
+}
+a:hover{
+  color: #00bfff;
+}
+
+.derechos{
+    color: rgb(255, 255, 255);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    grid-column: 1 / -1;
+    justify-content: center;
+}
+.tutienda{
+  color: white;
+}
+.fa-facebook-square{
+    color: #3b5999;
+}
+.fa-twitter-square{
+    color: #1DA1F2;
+}
+.fa-instagram{
+    color: #e6683c;
+}
+.fa-facebook-square:hover, .fa-twitter-square:hover, .fa-instagram:hover, .fa-google-plus-square:hover{
+    color: #00bfff;
+}
+
+.logoo img{
+  width: 70%;
+  height: 70%;
+  position:relative;
+}
+/*footer*/
+.nocursor{
+    cursor:auto;
+}

@@ -1,0 +1,189 @@
+body{
+    background-color: silver;
+    margin: 0%;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+a{
+    
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+    color: #fff;
+}
+
+.titulo-seccion{
+    text-transform: uppercase;
+    font-size: 3.5rem;
+    letter-spacing: 3px;
+    margin-right: -3px;
+    margin-bottom: 5rem;
+    margin-top: 5rem;
+    text-align: center;
+    color: #000000;
+    position: relative;
+}
+
+.titulo-seccion::after{
+    content: "";
+    width: 10rem;
+    height: 0.8rem;
+    background-color: #445ae3;
+    position: absolute;
+    bottom: -2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 2rem;
+}
+.contenedor-tarjetas{
+    display: grid;
+    grid-template-columns: repeat(2, 0fr);
+    gap: 50px;
+    padding: 20px;
+    margin-left: 21%;
+}
+
+.tarjeta-persona{
+    width: 32rem;
+    background-color: #ebeef8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0;
+    box-shadow: 0.5rem 0.5rem 3rem rgba(63, 233, 255, 0.2);
+    border-radius: 5%;
+}
+
+.tarjeta-persona2{
+    width: 32rem;
+    background-color: #ebeef8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0;
+    box-shadow: 0.5rem 0.5rem 3rem rgba(255, 88, 88, 0.2);
+    border-radius: 5%;
+}
+
+
+.tarjeta-persona3{
+    width: 32rem;
+    background-color: #ebeef8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0;
+    box-shadow: 0.5rem 0.5rem 3rem rgba(236, 218, 49, 0.2);
+    border-radius: 5%;
+}
+
+.tarjeta-persona4{
+    width: 32rem;
+    background-color: #ebeef8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0;
+    box-shadow: 0.5rem 0.5rem 3rem rgba(255, 73, 216, 0.2);
+    border-radius: 5%;
+}
+
+.imagen-fondo{
+    width: 100%;
+    height: 26rem;
+    object-fit: cover;
+    -webkit-clip-path: polygon(0 0, 100% 1%, 100% 50%, 0% 100%);
+    border-radius: 7%;
+    
+}
+
+.imagen-perfil{
+    width: 15rem;
+    height: 15rem;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-top: -11rem;
+    z-index: 999;
+    border: 1rem solid #eef8eb;
+    
+}
+
+.nombre{
+    font-size: 2.5rem;
+    color: #333;
+    margin: 1.5rem;
+}
+
+.cargo{
+    color: #777;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.descripcion{
+    font-size: 1.5rem;
+    margin: 1.5rem 0;
+    font-style: italic;
+    text-align: center;
+    color: #333;
+}
+
+.boton-contacto{
+    padding: 1rem 2.5rem;
+    background-color: #445ae3;
+    border-radius: 2rem;
+    margin: 1rem 0;
+    text-transform: uppercase;
+    color: #eee;
+    font-size: 1.4rem;
+    transition: all 1.5s;
+}
+
+.tarjeta-persona .boton-contacto:hover{
+    transform: translateY(-2px);
+    box-shadow: 0.5rem 0.5rem 2rem rgba(0, 0, 0, 0.1);
+}
+
+.tarjeta-persona .boton-contacto:active{
+    transform: translateY(0);
+    box-shadow: none;
+}
+
+.redes-sociales{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2rem 0;
+    margin-top: 1.5rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.redes-sociales i{
+    font-size: 3rem;
+    
+}
+
+.fa-facebook-square{
+    color: #3b5999;
+}
+
+.fa-twitter-square{
+    color: #55acee;
+}
+
+.fa-instagram{
+    color: #e6683c;
+
+}
+
+.fa-google-plus-square{
+    color: #dd4b39;
+}
+
+.fa-facebook-square:hover, .fa-twitter-square:hover, .fa-instagram:hover, .fa-google-plus-square:hover{
+    color: #45e19f;
+}

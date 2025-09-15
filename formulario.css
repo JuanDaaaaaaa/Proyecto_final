@@ -1,0 +1,90 @@
+body{
+    background-color: silver;
+    margin: 0%;
+    font-family:'Times New Roman', Times, serif;
+
+}
+.cajaf{
+    max-width: 300px;
+    background-color: #000000;
+    overflow: hidden;
+    border-radius: 18px;
+    color: black;
+    margin-left: 40%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+.formu{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 32px 24px 24px;
+    gap: 16px;
+    text-align: center;
+
+}
+.titulo{
+    font-weight: bold;
+    font-size: 1.6rem;
+    color: white;
+}
+.subti{
+    font-size: 1rem;
+    color: rgb(255, 255, 255);
+
+}
+.contenido{
+    overflow: hidden;
+    border-radius: 8px;
+    background-color: #fff;
+    margin: 1rem 0 0.5rem;
+    width: 100%;
+
+
+}
+.campo{
+    background: none;
+    border: 0;
+    outline: 0;
+    height: 40px;
+    width: 100%;
+    border-bottom: 1px solid #eee;
+    font-size: 0.9rem;
+    padding: 8px 15px;
+
+
+}
+.extra{
+    padding: 16px;
+    font-size: 0.85rem;
+    background-color: #e0ecfb;
+    box-shadow: rgb(0, 0, 0 /8%)0 - 1px;
+
+
+}
+.extra a{
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    transition: color 0.3s ease;
+}
+.extra a:hover{
+    color: #00bfff;
+    text-decoration: underline;
+
+}
+.boton{
+    background-color: #00bfff;
+    color: #fff;
+    border: 0;
+    padding: 10px 16px;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    
+    
+}
+.boton:hover{
+    background-color: rgb(45, 139, 165);
+}

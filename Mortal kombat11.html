@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <link rel="stylesheet" href="Mortal kombat11.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego</title>
+</head>
+
+<body>
+<!-- cargar barra navegación-->
+    <div id="contenedor-navegacion"></div>
+
+
+    <div class="contenedor_titulo">
+        <h1>MORTAL KOMBAT 11</h1>
+    </div>
+    <div class="slide">
+        <div class="slide-inner">
+            <input class="slide-open" type="radio" id="slide-1" name="slide" aria-hidden="true" hidden=""
+                checked="checked">
+            <div class="slide-item">
+                <img src="imágenes/Mortal1.jpg">
+            </div>
+            <input class="slide-open" type="radio" id="slide-2" name="slide" aria-hidden="true" hidden="">
+            <div class="slide-item">
+                <img src="imágenes/Mortal2.jpg">
+            </div>
+            <input class="slide-open" type="radio" id="slide-3" name="slide" aria-hidden="true" hidden="">
+            <div class="slide-item">
+                <img src="imágenes/Mortal3.jpg">
+            </div>
+            <label for="slide-3" class="slide-control prev control-1">‹</label>
+            <label for="slide-2" class="slide-control next control-1">›</label>
+            <label for="slide-1" class="slide-control prev control-2">‹</label>
+            <label for="slide-3" class="slide-control next control-2">›</label>
+            <label for="slide-2" class="slide-control prev control-3">‹</label>
+            <label for="slide-1" class="slide-control next control-3">›</label>
+            <ol class="slide-indicador">
+                <li>
+                    <label for="slide-1" class="slide-circulo">•</label>
+                </li>
+                <li>
+                    <label for="slide-2" class="slide-circulo">•</label>
+                </li>
+                <li>
+                    <label for="slide-3" class="slide-circulo">•</label>
+                </li>
+            </ol>
+        </div>
+    </div>
+             <!---caja de texto1-->
+           <div class="card">
+            <span class="title"> $ 35.000</span>
+    
+    <div class="actions"></div>
+        <button class="pref">
+        </button>
+        <button class="accept">
+            Agregar al carrito
+        </button>
+           </div>
+
+
+           <!---caja de texto2-->
+
+ <div class="card2">
+    <span class="title">DESCRIPCIÓN</span>
+    <p class="description">
+     Es un juego de lucha desarrollado por NetherRealm Studios y publicado por Warner Bros. Interactive Entertainment, siendo la undécima entrega principal de la saga.
+     Destaca por su nuevo motor gráfico, el cual detalla la brutalidad de los ataques, y por ofrecer a los jugadores un alto grado de personalización de personajes a través de las variantes de personaje. El juego incluye un modo historia cinemático que continúa la narrativa épica de la serie, enfrentando a luchadores clásicos y nuevos.
+    </p>
+    </div>
+       <!-- aquí se carga el pie de pagina -->
+   <div id="contenedor-pie"></div>
+  
+
+
+<script src="cargar-componentes.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <link rel="stylesheet" href="left 4 dead.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego</title>
+</head>
+
+<body>
+    <!-- cargar barra navegación-->
+    <div id="contenedor-navegacion"></div>
+
+
+    <div class="contenedor_titulo">
+        <h1>LEFT 4 DEAD 2</h1>
+    </div>
+    <div class="slide">
+        <div class="slide-inner">
+            <input class="slide-open" type="radio" id="slide-1" name="slide" aria-hidden="true" hidden=""
+                checked="checked">
+            <div class="slide-item">
+                <img src="imágenes/left1.jpg">
+            </div>
+            <input class="slide-open" type="radio" id="slide-2" name="slide" aria-hidden="true" hidden="">
+            <div class="slide-item">
+                <img src="imágenes/left2.jpg">
+            </div>
+            <input class="slide-open" type="radio" id="slide-3" name="slide" aria-hidden="true" hidden="">
+            <div class="slide-item">
+                <img src="imágenes/left3.jpg">
+            </div>
+            <label for="slide-3" class="slide-control prev control-1">‹</label>
+            <label for="slide-2" class="slide-control next control-1">›</label>
+            <label for="slide-1" class="slide-control prev control-2">‹</label>
+            <label for="slide-3" class="slide-control next control-2">›</label>
+            <label for="slide-2" class="slide-control prev control-3">‹</label>
+            <label for="slide-1" class="slide-control next control-3">›</label>
+            <ol class="slide-indicador">
+                <li>
+                    <label for="slide-1" class="slide-circulo">•</label>
+                </li>
+                <li>
+                    <label for="slide-2" class="slide-circulo">•</label>
+                </li>
+                <li>
+                    <label for="slide-3" class="slide-circulo">•</label>
+                </li>
+            </ol>
+        </div>
+    </div>
+             <!---caja de texto1-->
+           <div class="card">
+            <span class="title"> $ 45.000</span>
+    
+    <div class="actions"></div>
+        <button class="pref">
+        </button>
+        <button class="accept">
+            Agregar al carrito
+        </button>
+           </div>
+
+
+           <!---caja de texto2-->
+
+ <div class="card2">
+    <span class="title">DESCRIPCIÓN</span>
+    <p class="description">
+      Left 4 Dead es un videojuego de terror de disparos en primera persona desarrollado por Valve South y publicado por Valve.
+       El juego utiliza el motor gráfico de Valve, Source, y está disponible para Microsoft Windows, Xbox 360 y macOS.
+        Fue lanzado originalmente para Microsoft Windows y Xbox 360 en noviembre de 2008 y para Mac OS X en octubre de 2010,
+         y es el primer título de la serie Left 4 Dead. Ambientado tras un brote de zombis en la costa este de Estados Unidos, el juego enfrenta a sus cuatro protagonistas,
+          apodados los "Supervivientes", 
+      contra hordas de infectados. </p>
+    </div>
+    
+<!-- aquí se carga el pie de pagina -->
+   <div id="contenedor-pie"></div>
+  
+
+
+<script src="cargar-componentes.js"></script>    
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,243 @@
+body{
+    background-color: silver;
+    font-family:'Times New Roman', Times, serif;
+    margin: 0%;
+}
+
+
+
+
+/* Carrusel */ 
+@keyframes autoRun3d {
+  from {
+    transform: perspective(800px) rotateY(-360deg);
+  }
+  to {
+    transform: perspective(800px) rotateY(0deg);
+  }
+}
+
+@keyframes animateBrightness {
+  10% {
+    filter: brightness(1);
+  }
+  50% {
+    filter: brightness(0.1);
+  }
+  90% {
+    filter: brightness(1);
+  }
+}
+
+.card-3d {
+  width: 100%;
+  max-width: 800px;
+  height: 400px;
+  transform-style: preserve-3d;
+  transform: perspective(800px);
+  animation: autoRun3d 20s linear infinite;
+}
+.fondo{
+background-image:url("imágenes/Fondo_carrusel.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  
+}
+.fondo img{
+position: fixed;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+
+
+.img_carru{
+  transition: transform 0.9s; box-shadow: 0.9s;
+  border-radius: 1rem;
+}
+.img_carru:hover{
+  /*transform: translateY(-20px);*/
+  box-shadow: 0 0 15px #00bfff;
+  transition: 0.9s;
+  transform: scale(1.2);
+}
+
+.card-3d div {
+  position: absolute;
+  width: 300px;
+  height: 190px;
+  /*background-color: rgb(199, 199, 199);*/
+  /*border: solid 2px lightgray;*/
+  border-radius: 0.5rem;
+  top: 50%;
+  left: 50%;
+  transform-origin: center center;
+  animation: animateBrightness 20s linear infinite;
+  transition-duration: 200ms;
+  will-change: transform, filter;
+  
+  
+}
+
+.card-3d:hover {
+  animation-play-state: paused !important;
+}
+
+.card-3d:hover div {
+  animation-play-state: paused !important;
+}
+
+.card-3d div:nth-child(1) {
+  transform: translate(-50%, -50%) rotateY(0deg) translateZ(420px);
+  animation-delay: -0s;
+}
+
+.card-3d div:nth-child(2) {
+  transform: translate(-50%, -50%) rotateY(45deg) translateZ(420px);
+  animation-delay: -2s;
+}
+
+.card-3d div:nth-child(3) {
+  transform: translate(-50%, -50%) rotateY(90deg) translateZ(420px);
+  animation-delay: -4s;
+}
+
+.card-3d div:nth-child(4) {
+  transform: translate(-50%, -50%) rotateY(135deg) translateZ(420px);
+  animation-delay: -6s;
+}
+
+.card-3d div:nth-child(5) {
+  transform: translate(-50%, -50%) rotateY(180deg) translateZ(420px);
+  animation-delay: -8s;
+}
+
+.card-3d div:nth-child(6) {
+  transform: translate(-50%, -50%) rotateY(225deg) translateZ(420px);
+  animation-delay: -10s;
+}
+
+.card-3d div:nth-child(7) {
+  transform: translate(-50%, -50%) rotateY(270deg) translateZ(420px);
+  animation-delay: -12s;
+}
+
+.card-3d div:nth-child(8) {
+  transform: translate(-50%, -50%) rotateY(315deg) translateZ(420px);
+  animation-delay: -14s;
+}
+
+
+
+
+
+.card-3d div img{
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 0 10px #000000;
+  /*carrusel*/
+}
+
+/*Tarjetas de video juegos, grilla*/
+.contenedor{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1490px;
+    margin: 50px auto;
+   
+    
+
+}
+.card {
+ --background: linear-gradient(to left, #000000 0%, #000000 100%);
+ width: 250px;
+ height: 280px;
+ padding: 5px;
+ border-radius: 1rem;
+ overflow: visible;
+ position: relative;
+ z-index: 1;
+}
+
+.card::after {
+ position: absolute;
+ content: "";
+ top: 30px;
+ left: 0;
+ right: 0;
+ z-index: -1;
+ height: 100%;
+ width: 100%;
+ transform: scale(0.8);
+ filter: blur(25px);
+ background: var(--background);
+ transition: opacity .5s;
+}
+
+.card-info {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ width: 100%;
+ height: 100%;
+ overflow: visible;
+ border-radius: 1rem;
+ transition: transform 0.9s; box-shadow: 0.9s;
+}
+
+/*Hover*/
+.card:hover::after {
+ opacity: 0;
+ 
+}
+.card-info:hover{
+  box-shadow: 0 0 15px #00bfff;
+  transform: translateY(-10px);
+  transition: 0.9s;
+}
+.card-info a {
+  display: block; /* el enlace ocupa todo el contenedor */
+  width: 100%;
+  height: 100%;
+}
+
+.card-info a img {
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+}
+/*Tarjetas de video juegos y hoover terminan aquí */ 
+
+
+/*Media queries*/
+@media (max-width: 1280px) {
+  .card-3d {
+    max-width: 600px;
+    height: 300px;
+  }
+}
+/* Pantallas pequeñas (laptops chicos o tablets en horizontal) */
+@media (max-width: 900px) {
+  .fondo {
+    height: auto;
+    padding: 40px 0;
+  }
+  .card-3d {
+    max-width: 400px;
+    height: 250px;
+  }
+}

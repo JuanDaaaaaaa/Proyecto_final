@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <link rel="stylesheet" href="forza.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego</title>
+</head>
+
+<body>
+<!-- cargar barra navegación-->
+    <div id="contenedor-navegacion"></div>
+
+
+    <div class="contenedor_titulo">
+        <h1>FORZA HORIZON 5</h1>
+    </div>
+    <div class="slide">
+        <div class="slide-inner">
+            <input class="slide-open" type="radio" id="slide-1" name="slide" aria-hidden="true" hidden=""
+                checked="checked">
+            <div class="slide-item">
+                <img src="imágenes/Forza1.jpeg">
+            </div>
+            <input class="slide-open" type="radio" id="slide-2" name="slide" aria-hidden="true" hidden="">
+            <div class="slide-item">
+                <img src="imágenes/Forza2.jpg">
+            </div>
+            <input class="slide-open" type="radio" id="slide-3" name="slide" aria-hidden="true" hidden="">
+            <div class="slide-item">
+                <img src="imágenes/Forza3.jpg">
+            </div>
+            <label for="slide-3" class="slide-control prev control-1">‹</label>
+            <label for="slide-2" class="slide-control next control-1">›</label>
+            <label for="slide-1" class="slide-control prev control-2">‹</label>
+            <label for="slide-3" class="slide-control next control-2">›</label>
+            <label for="slide-2" class="slide-control prev control-3">‹</label>
+            <label for="slide-1" class="slide-control next control-3">›</label>
+            <ol class="slide-indicador">
+                <li>
+                    <label for="slide-1" class="slide-circulo">•</label>
+                </li>
+                <li>
+                    <label for="slide-2" class="slide-circulo">•</label>
+                </li>
+                <li>
+                    <label for="slide-3" class="slide-circulo">•</label>
+                </li>
+            </ol>
+        </div>
+    </div>
+             <!---caja de texto1-->
+           <div class="card">
+            <span class="title"> $ 45.000</span>
+    
+    <div class="actions"></div>
+        <button class="pref">
+        </button>
+        <button class="accept">
+            Agregar al carrito
+        </button>
+           </div>
+
+
+           <!---caja de texto2-->
+
+ <div class="card2">
+    <span class="title">DESCRIPCIÓN</span>
+    <p class="description">
+     Es un videojuego de carreras multijugador en línea y de un jugador desarrollado por Playground Games y publicado por Xbox Game Studios. Es el quinto título de Forza Horizon y la duodécima entrega principal de la serie Forza. El juego está ambientado en una representación ficticia de México </p>
+    </div>
+       <!-- aquí se carga el pie de pagina -->
+   <div id="contenedor-pie"></div>
+  
+
+
+<script src="cargar-componentes.js"></script>
+
+
+</body>
+</html>

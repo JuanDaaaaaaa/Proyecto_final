@@ -1,0 +1,97 @@
+nav{
+    background-color: rgb(0, 0, 0);
+    height: 30px;
+    display: flex;
+    justify-content:center;
+    position: fixed;
+    padding: 13px;
+    box-shadow: 0 0 20px rgb(0, 0, 0);
+    width: 100%;
+    align-items: center;
+    top:0;
+    left:0;
+    z-index: 1000;
+    transform: translateY(-100%);
+    animation: bajar 0.6s ease-out forwards;
+  }
+  @keyframes bajar{
+   to{
+    transform: translateY(0);
+   } 
+  }
+nav a{
+    background-color: black;
+    border-radius: 5px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    margin-right: 19px;
+    padding: 10px;
+
+}
+nav a:hover{
+    color: #00bfff;
+    transition: 0.5s;
+    box-shadow: 0 0 5px;
+}
+
+.submenu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #000000;
+    min-width: 200px;
+    list-style: none;
+    padding: 0.5rem 0;
+    border-radius: 4px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    display: none;
+}
+
+.submenu a {
+    display: block;
+    padding: 0.5rem 1rem;
+    color: #ecf0f1;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.submenu a:hover {
+    background-color: #00bfff;
+    color: white;
+}
+.menu-desplegable {
+    position: relative;
+}
+.enlace-nav {
+    color: #ecf0f1;
+    text-decoration: none;
+    padding: clamp(0.25rem, 1vw, 0.5rem) clamp(0.5rem, 2vw, 1rem);
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    font-size: clamp(0.875rem, 2vw, 1rem);
+    cursor:default;
+}
+
+.enlace-nav:hover,
+.enlace-nav.activo{
+    background-color: #000000;
+    
+}
+.menu-desplegable:hover .submenu{
+    display: block;
+}
+.nav-links {
+  list-style: none;   /* quita las viñetas */
+  margin: 0;
+  padding: 0;
+  display: flex;      /* los pone en fila */
+  align-items: center;
+  gap: 1rem;          /* espacio entre los enlaces */
+}
+.logo img{
+    width: 80px;
+    height: auto; 
+    transform: translate(-400px);
+    display: block;
+}
+/* IA*/

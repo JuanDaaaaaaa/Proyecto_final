@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <link rel="stylesheet" href="Amoug us.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego</title>
+</head>
+
+<body>
+    <!-- cargar barra navegación-->
+    <div id="contenedor-navegacion"></div>
+
+
+    <div class="contenedor_titulo">
+        <h1>AMOUNG US</h1>
+    </div>
+    <div class="slide">
+        <div class="slide-inner">
+            <input class="slide-open" type="radio" id="slide-1" name="slide" aria-hidden="true" hidden=""
+                checked="checked">
+            <div class="slide-item">
+                <img src="imágenes/amoung_us.jpg">
+            </div>
+            <input class="slide-open" type="radio" id="slide-2" name="slide" aria-hidden="true" hidden="">
+            <div class="slide-item">
+                <img src="imágenes/amoungus2.png">
+            </div>
+            <input class="slide-open" type="radio" id="slide-3" name="slide" aria-hidden="true" hidden="">
+            <div class="slide-item">
+                <img src="imágenes/amoungus3.png.jpg">
+            </div>
+            <label for="slide-3" class="slide-control prev control-1">‹</label>
+            <label for="slide-2" class="slide-control next control-1">›</label>
+            <label for="slide-1" class="slide-control prev control-2">‹</label>
+            <label for="slide-3" class="slide-control next control-2">›</label>
+            <label for="slide-2" class="slide-control prev control-3">‹</label>
+            <label for="slide-1" class="slide-control next control-3">›</label>
+            <ol class="slide-indicador">
+                <li>
+                    <label for="slide-1" class="slide-circulo">•</label>
+                </li>
+                <li>
+                    <label for="slide-2" class="slide-circulo">•</label>
+                </li>
+                <li>
+                    <label for="slide-3" class="slide-circulo">•</label>
+                </li>
+            </ol>
+        </div>
+    </div>
+             <!---caja de texto1-->
+           <div class="card">
+            <span class="title"> $ 10.000</span>
+           
+    <div class="actions"></div>
+        <button class="pref">
+        </button>
+        <button class="accept">
+            Agregar al carrito
+        </button>
+    </div>
+
+
+           <!---caja de texto2-->
+
+ <div class="card2">
+    <span class="title">DESCRIPCIÓN</span>
+    <p class="description">
+       Among Us​ (traducido como entre nosotros) es un videojuego de género party y multijugador en línea desarrollado por la compañía estadounidense Innersloth y distribuido entre junio y noviembre de 2018 para las plataformas Android,
+        iOS y Windows. El 15 de diciembre de 2020 se anunció su disponibilidad en Nintendo Switch, mientras que su adaptación a las consolas Xbox One y Xbox Series X|S se confirmó para 14 de diciembre de 2021.[12]​ Posteriormente se anunció su lanzamiento para PlayStation 4 y PlayStation 5 con skins exclusivos. </p>
+    </div>
+
+
+    <!-- aquí se carga el pie de pagina -->
+   <div id="contenedor-pie"></div>
+
+<script src="cargar-componentes.js"></script>
+       
+</body>
+
+</html>

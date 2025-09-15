@@ -1,0 +1,271 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    /* Puedes ajustar el color de fondo si lo deseas */
+    background: silver;
+    color: #fff;
+    margin: 0;
+}
+  
+  
+  
+  
+  /*contenedor titulo*/
+    
+    .contenedor_titulo {
+        margin: auto;
+        width: 50%;
+        height: 80px;
+        background: rgb(0, 0, 0);
+        box-shadow: rgba(18, 185, 214, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 90px;
+    }
+    
+    
+  /*carrusel*/
+    .slide {
+        position: relative;
+        box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
+        margin-top: 26px;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .slide-inner {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        height: 400px; /* Puedes ajustar la altura si lo deseas */
+        margin: 0 auto;
+    }
+
+    .slide-open:checked+.slide-item {
+        position: static;
+        opacity: 100;
+    }
+
+    .slide-item {
+        position: absolute;
+        opacity: 0;
+        -webkit-transition: opacity 0.6s ease-out;
+        transition: opacity 0.6s ease-out;
+    }
+
+    .slide-item img {
+        object-fit: contain;
+        width: 100%;
+        display: block;
+        height: auto;
+        max-width: 100%;
+    }
+
+    .slide-control {
+        background: rgba(0, 0, 0, 0.28);
+        border-radius: 50%;
+        color: #fff;
+        cursor: pointer;
+        display: none;
+        font-size: 40px;
+        height: 40px;
+        line-height: 35px;
+        position: absolute;
+        top: 50%;
+        -webkit-transform: translate(0, -50%);
+        cursor: pointer;
+        -ms-transform: translate(0, -50%);
+        transform: translate(0, -50%);
+        text-align: center;
+        width: 40px;
+        z-index: 10;
+    }
+
+    .slide-control.prev {
+        left: 2%;
+    }
+
+    .slide-control.next {
+        right: 2%;
+    }
+
+    .slide-control:hover {
+        background: rgba(0, 0, 0, 0.8);
+        color: #aaaaaa;
+    }
+
+    #slide-1:checked~.control-1,
+    #slide-2:checked~.control-2,
+    #slide-3:checked~.control-3 {
+        display: block;
+    }
+
+    .slide-indicador {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        bottom: 2%;
+        left: 0;
+        right: 0;
+        text-align: center;
+        z-index: 10;
+    }
+
+    .slide-indicador li {
+        display: inline-block;
+        margin: 0 5px;
+    }
+
+    .slide-circulo {
+        color: #828282;
+        cursor: pointer;
+        display: block;
+        font-size: 35px;
+    }
+
+    .slide-circulo:hover {
+        color: #aaaaaa;
+    }
+
+    #slide-1:checked~.control-1~.slide-indicador li:nth-child(1) .slide-circulo,
+    #slide-2:checked~.control-2~.slide-indicador li:nth-child(2) .slide-circulo,
+    #slide-3:checked~.control-3~.slide-indicador li:nth-child(3) .slide-circulo {
+        color: #010305;
+    }
+
+    #titulo {
+        width: 100%;
+        position: absolute;
+        padding: 0px;
+        margin: 0px auto;
+        text-align: center;
+        font-size: 27px;
+        color: rgba(255, 255, 255, 1);
+        font-family: 'Open Sans', sans-serif;
+        z-index: 9999;
+        text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.33),
+            -1px 0px 2px rgba(255, 255, 255, 0);
+
+    }
+
+/*---caja de texto--/-*/
+
+.card {
+  margin:auto;
+  text-align: center;
+ margin-top:10px;
+  width: 50%;
+  height: 100px;
+  background: rgb(129, 123, 123);
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+.title {
+  font-weight: 600;
+  color: rgb(0, 0, 0);
+}
+
+.description {
+  margin-top: 1rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: rgb(249, 251, 252);
+}
+
+.description a {
+  --tw-text-opacity: 1;
+  color: rgb(251, 251, 251);
+}
+
+.description a:hover {
+  -webkit-text-decoration-line: underline;
+  text-decoration-line: underline;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1rem;
+  -moz-column-gap: 1rem;
+  column-gap: 1rem;
+  flex-shrink: 0;
+}
+
+.pref {
+  font-size: 0.75rem;
+  line-height: 1rem;
+  color: rgb(31 41 55 );
+  -webkit-text-decoration-line: underline;
+  text-decoration-line: underline;
+  transition: all .3s cubic-bezier(0.4, 0, 0.2, 1);
+  border: none;
+  background-color: transparent;
+}
+
+.pref:hover {
+  color: rgb(50, 64, 83);
+}
+
+.pref:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.accept {
+transform: translate(-1%, -0%);
+  width: 100%;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  background-color: rgb(0, 0, 0);
+  font-weight: 100;
+  border-radius: 0.5rem;
+  color: #fff;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
+  border: none;
+  transition: all .15s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.accept:hover {
+  background-color: rgb(46, 140, 168);
+  cursor: pointer;
+}
+
+.accept:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+/*---caja de texo2--/-*/
+.card2 {
+  margin:auto;
+  overflow: hidden;
+  position:center;
+  text-align: center;
+ margin-top:60px;
+  width: 90%;
+  height: 200px;
+  background: rgb(93, 90, 90);
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  border-radius: 16px;
+  padding: 30px;
+}
+
+.card, .slide, .card2, .contenedor_titulo {
+  margin-bottom: 32px;
+  border-radius: 16px;
+  padding: 24px;
+}
+
+@media (max-width: 700px) {
+  .card, .card2, .contenedor_titulo, .slide {
+    width: 95%;
+    padding: 12px;
+  }
+  .slide-inner {
+    height: 220px;
+  }
+}

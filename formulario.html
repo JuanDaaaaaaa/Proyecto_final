@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="formulario.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!-- cargar barra navegación-->
+    <div id="contenedor-navegacion"></div>
+    
+    <div class="cajaf">
+        <form class="formu">
+        <span class="titulo">Pagar carrito</span>
+        <span class="subti">Ingresa tus datos</span>
+           <div class="contenido">
+            <input type="text" class ="campo" placeholder="Método de pago">
+            <input type="number" class="campo" placeholder="Número de tarjeta">
+            <input type="email" class="campo" placeholder="Correo"> 
+
+
+           </div>
+           <button class="boton">Continuar <i id="flechita" class="fas fa-arrow-right"></i>
+           </button>
+
+        </form>
+        <div class="extra">
+          <p> ¿No has agregado un juego? Tal vez esto te guste.  <a href="ofertas.html">Volver</a></p>
+        </div>
+    </div>
+<!-- aquí se carga el pie de pagina -->
+    <div id="contenedor-pie"></div>
+
+<script src="cargar-componentes.js"></script>
+
+</body>
+</html>
