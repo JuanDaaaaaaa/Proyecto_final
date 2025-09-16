@@ -1,6 +1,5 @@
 body {
     font-family: 'Times New Roman', Times, serif;
-    /* Puedes ajustar el color de fondo si lo deseas */
     background: silver;
     color: #fff;
     margin: 0;
@@ -38,7 +37,7 @@ body {
         position: relative;
         overflow: hidden;
         width: 100%;
-        height: 400px; /* Puedes ajustar la altura si lo deseas */
+        height: 400px; 
         margin: 0 auto;
     }
 
@@ -274,4 +273,5 @@ transform: translate(-1%, -0%);
   .slide-inner {
     height: 220px;
   }
+
 }
