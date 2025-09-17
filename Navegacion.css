@@ -94,4 +94,51 @@ nav a:hover{
     transform: translate(-400px);
     display: block;
 }
-/* IA*/
+
+/* Contador del carrito */
+#contador-carrito {
+  background: red;
+  color: white;
+  border-radius: 50%;
+  padding: 2px 6px;
+  font-size: 12px;
+  position: absolute;
+  top: -8px;
+  right: -10px;
+}
+
+/* Posición relativa para que el contador se ubique bien */
+#carrito {
+  position: relative;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+/* Elemento animado (clon) */
+.elemento-volador {
+  position: absolute;
+  z-index: 1000;
+  transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+  pointer-events: none;
+}
+.btn-agregar{
+  transform: translate(-1%, -0%);
+  width: 100%;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  background-color: rgb(0, 0, 0);
+  font-weight: 100;
+  border-radius: 0.5rem;
+  color: #fff;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
+  border: none;
+  transition: all .15s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-agregar:hover {
+  background-color: rgb(46, 140, 168);
+  cursor: pointer;
+}
